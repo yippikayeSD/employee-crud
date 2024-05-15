@@ -1,0 +1,22 @@
+server:
+  port: 8012
+spring:
+    application:
+        name: employee-crud
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      driverClassName: com.mysql.cj.jdbc.Driver
+      password: cassandra
+      url: jdbc:mysql://192.168.105.37:4306/cs_test_employee?autoreconnect = true
+      username: cassandra
+    jpa:
+      hibernate:
+        ddl-auto: update
+        naming:
+          physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQLDialect
+      show-sql: false
+
+
